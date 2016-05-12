@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>User Table</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" text="text/css" href="style.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<!--If we wanted to add in a live updating table then we would first have to
+    get the cdn for angular and put into this file. Then we would make a seperate
+    javascript file that makes an ng-App, an ng-Controller, and an ng-Model. 
+    The ng-Controller would be making the http get request and the ng-Model 
+    will be putting the data into a front end friendly interface. We would then 
+    use an ng-Repeat(similar to a for each loop) to display new rows.
+
+    We would also need the server to use web sockets or polling for real live updates.
+-->
+<body>
+<div class="container">
+  <h1 id="head1" style="font-weight: normal;">Check out my responsive table.</h1>
+  <h4 id="head4"style="font-weight: normal; color:#a2a2a2;">Pretty cool right?</h4>
+  <br />
+  <div class="row">
+  <div class="col-xs-offset-0 col-xs-12 col-xs-offset-0">
+    <table class="table table-responsive table-striped">
+      <tr style="background-color: white">
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@md</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

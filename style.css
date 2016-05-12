@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (max-width: 480px) {
+	#head1 {
+		font-size: 1.5em;
+	}
+	#head4 {
+		font-size: 1em;	
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	#head1 {
+		font-size: 2em;
+	}
+	#head4 {
+		font-size: 1.5em;	
+	}
+}
+/* These classes are used to modify the table-striped colors.
+ I reversed the colors as seen in sample picture.*/
+.table-striped>tbody>tr:nth-child(odd)>td {
+	background-color: #fff;
+}
+.table-striped > tbody> tr:nth-child(even) > td {
+	background-color: #f9f9f9;
+}
